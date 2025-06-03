@@ -39,20 +39,23 @@
 input::placeholder {
   color: white;
 }
-
 .checkbox-containers {
   display: flex;
-  text-align: center;
+  align-items: center; /* align checkbox and label vertically */
+  justify-content: flex-start; /* align them to the left */
   margin-bottom: 1rem;
   color: white;
   background-color: #093545;
   border-radius: 100px;
+
+  width: 100%; /* make it span full width */
+  gap: 0.1rem; /* space between checkbox and label */
 }
 .checkbox-containers .remember {
   color: white;
   cursor: pointer;
   text-decoration: none;
-  padding-top: 1.5px;
+  padding-top: 1.1px;
 }
 
 .checkbox-containers .remember:hover {
@@ -70,9 +73,9 @@ input::placeholder {
   cursor: pointer;
   width: 100%;
 }
-
+/* #2bd17e */
 .login-form button:hover {
-  background-color: #0056b3;
+  background-color: #22e2e2eb;
 }
 
 span {
