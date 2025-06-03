@@ -80,11 +80,7 @@ const Navbar = () => {
       </h1>
 
       <div className="navbar-links">
-        {!user ? (
-          <button className="nav-btn logout" onClick={handleLogout}>
-            login
-          </button>
-        ) : (
+        {user && (
           <button className="nav-btn logout" onClick={handleLogout}>
             Logout
           </button>
