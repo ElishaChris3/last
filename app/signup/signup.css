@@ -1,0 +1,107 @@
+/* Center everything */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background: none;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 64px;
+  font-weight: 600;
+  color: white;
+}
+
+.login-form input[type="email"],
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #224957;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 300px;
+  background-color: #224957;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.checkbox-containers {
+  display: flex;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: #093545;
+  border-radius: 100px;
+}
+.checkbox-containers .remember {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.checkbox-containers .remember:hover {
+  color: #87cefa; /* a bit brighter blue on hover */
+}
+
+.check {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #224957; /* Unchecked background */
+  border: 2px solid #224957;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-container input {
+  margin-right: 0.5rem;
+  color: #224957;
+}
+
+.login-form .btn-signup {
+  padding: 0.8rem;
+  border: none;
+  background-color: #2bd17e;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media screen and (max-width: 480px) {
+  .login-form {
+    padding: 1.5rem;
+  }
+
+  .login-form h1 {
+    font-size: 36px;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 0.95rem;
+  }
+}

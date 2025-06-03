@@ -1,0 +1,52 @@
+/* Header section */
+.header {
+  padding: 20px 120px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 20px;
+  }
+}
+
+/* Movies grid */
+.movies {
+  padding: 0px 120px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 24px 30px;
+}
+
+.movies .movielist {
+  margin-top: 100px;
+}
+
+@media (max-width: 1024px) {
+  .movies {
+    padding: 0px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movies {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movies {
+    padding: 0px 15px;
+  }
+}

@@ -1,0 +1,35 @@
+.table-container {
+  margin: 70px;
+  padding: 20px;
+  background-color: #0a192f;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.table-container h1 {
+  color: #ffffff;
+}
+
+.permission-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #dad8d8;
+  background-color: #112240;
+}
+
+.permission-table th,
+.permission-table td {
+  border: 1px solid #233554;
+  padding: 12px 16px;
+  text-align: start;
+}
+
+.permission-table th {
+  background-color: #1e2a44;
+  font-weight: 600;
+}
+
+.permission-table input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}

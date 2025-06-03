@@ -1,0 +1,130 @@
+/* From Uiverse.io by MuhammadHasann */
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+  height: 504px;
+  text-align: center;
+  padding: 8px;
+  background-color: #092c39;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.image_container {
+  overflow: hidden;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  height: 400px;
+
+  border-radius: 12px;
+}
+
+.details {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+
+  text-align: start;
+  color: rgb(255, 255, 255);
+}
+
+.details .title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.details p {
+  font-weight: 0;
+  font-size: 14px;
+}
+
+.card .del-btn {
+  padding: 0.5rem;
+  border: none;
+  background-color: #b30000; /* deeper red that fits your theme */
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 43%;
+  text-align: center;
+
+  display: block;
+  margin: 0.1rem auto 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.card .edit-btn {
+  padding: 0.5rem;
+  border: none;
+  background-color: #d69900; /* deeper red that fits your theme */
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  text-align: center;
+
+  display: block;
+  margin: 0.1rem auto 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Modal CSS */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  color: black;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.modal-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background-color: gray;
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background-color: red;
+  color: white;
+}

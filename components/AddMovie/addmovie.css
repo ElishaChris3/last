@@ -1,0 +1,33 @@
+section {
+  height: 40vh;
+  display: flex;
+  justify-content: center; /* centers vertically */
+  align-items: center; /* centers horizontally */
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #093545; /* optional: match your global bg */
+  padding-bottom: 100px;
+}
+
+section h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+section button {
+  padding: 18px 40px;
+  background-color: #2bd17e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+
+  font-weight: 700;
+}
+
+section button:hover {
+  background-color: #24b96f;
+}
